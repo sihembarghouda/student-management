@@ -50,22 +50,6 @@ npm run dev
 
 L'application frontend sera accessible sur : http://localhost:3000
 
-📂 Structure du projet
-
-fastapi-nextjs-students/
-│── backend/              # Code du backend FastAPI
-│   ├── main.py           # Point d'entrée FastAPI
-│   ├── models.py         # Modèles SQLAlchemy
-│   |
-│   ├── database.py       # Configuration MySQL
-│── frontend/             # Code du frontend Next.js
-│   ├── app/              # App Router de Next.js
-│   ├── components/       # Composants réutilisables
-│   ├── styles/           # Fichiers CSS/Tailwind
-│── README.md             # Documentation du projet
-│── requirements.txt      # Dépendances FastAPI
-│── package.json          # Dépendances Next.js
-
 📌 Fonctionnalités
 
 ✅ Ajouter un étudiant
