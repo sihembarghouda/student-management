@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Gestion des Étudiants
 
-## Getting Started
+📌 Description
 
-First, run the development server:
+Ce projet est une application web permettant de gérer une liste d'étudiants.
+Il utilise FastAPI pour le backend et Next.js pour le frontend.
 
-```bash
+🛠 Technologies utilisées
+
+Backend : FastAPI, Uvicorn, MySQL
+
+Frontend : Next.js, React, TailwindCSS
+
+Base de données : MySQL
+
+🚀 Installation et exécution du projet
+
+1️⃣ Cloner le projet
+
+git clone https://github.com/votre-repo/fastapi-nextjs-students.git
+cd fastapi-nextjs-students
+
+2️⃣ Backend (FastAPI)
+
+📌 Installation des dépendances
+
+cd backend
+python -m venv venv
+source venv/bin/activate  # Sur macOS/Linux
+venv\Scripts\activate  # Sur Windows
+pip install -r requirements.txt
+
+🚀 Lancer le serveur FastAPI
+
+uvicorn main:app --reload
+
+FastAPI sera disponible sur : http://127.0.0.1:8000
+Documentation interactive Swagger : http://127.0.0.1:8000/docs
+
+3️⃣ Frontend (Next.js)
+
+📌 Installation des dépendances
+
+cd ../frontend
+npm install
+
+🚀 Lancer le serveur Next.js
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+L'application frontend sera accessible sur : http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+📂 Structure du projet
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+fastapi-nextjs-students/
+│── backend/              # Code du backend FastAPI
+│   ├── main.py           # Point d'entrée FastAPI
+│   ├── models.py         # Modèles SQLAlchemy
+│   |
+│   ├── database.py       # Configuration MySQL
+│── frontend/             # Code du frontend Next.js
+│   ├── app/              # App Router de Next.js
+│   ├── components/       # Composants réutilisables
+│   ├── styles/           # Fichiers CSS/Tailwind
+│── README.md             # Documentation du projet
+│── requirements.txt      # Dépendances FastAPI
+│── package.json          # Dépendances Next.js
 
-## Learn More
+📌 Fonctionnalités
 
-To learn more about Next.js, take a look at the following resources:
+✅ Ajouter un étudiant
+✅ Modifier les informations d'un étudiant
+✅ Supprimer un étudiant
+✅ Lister tous les étudiants
+✅ Interface utilisateur moderne avec Next.js
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🤝 Contribution
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Fork le projet
 
-## Deploy on Vercel
+Crée une branche (git checkout -b feature-nom_fonctionnalité)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Fait des modifications et commit (git commit -m "Ajout de la fonctionnalité X")
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Push la branche (git push origin feature-nom_fonctionnalité)
+
+Ouvre une Pull Request
+
+📜 Licence
+
+Ce projet est sous licence MIT.
+
+📞 Contact
+
+📧 Email : sihembarghouda93@gmail.com
+📌 GitHub : sihembarghouda
